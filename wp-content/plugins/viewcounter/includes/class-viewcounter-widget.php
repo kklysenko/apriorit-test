@@ -9,8 +9,6 @@ add_action( 'widgets_init', 'register_viewcounter_widget' );
 
 class Viewcounter_Widget extends WP_Widget {
 
-	private $vc_defaults;
-
 	public function __construct() {
 		parent::__construct(
 			'Viewcounter_Widget',
@@ -37,7 +35,13 @@ class Viewcounter_Widget extends WP_Widget {
 		$html .= viewcounter_popular_posts();
 		$html .= $args['after_widget'];
 		echo $html;
-		}
+	}
+
+	public function update( $new_instance, $old_instance ) {
+		$instance = array();
+		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+		return $instance;
+	}
 
 }
 
