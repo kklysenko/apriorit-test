@@ -22,12 +22,21 @@ class Viewcounter_Widget extends WP_Widget {
 	}
 
 	public function widget( $args, $instance ) {
+		$select_options = ['day','week','year'];
 		$title = apply_filters( 'widget_title', $instance['title'] );
-		echo $args['before_widget'];
+		$html = $args['before_widget'];
 		if ( ! empty( $title ) )
-		echo $args['before_title'] . $title . $args['after_title'];
-		echo __( 'Привет мир, от Hostinger.ru', 'hstngr_widget_domain' );
-		echo $args['after_widget'];
+		$html .= $args['before_title'] . $title . $args['after_title'];
+		$html .= '<div class="viewcounter-order">Order by:';
+		$html .= '<select>';
+			foreach ($select_options as $key => $value) {
+				$html .= '
+				<option value="' . $value .'" >' . $value . '</option>';
+			}
+		$html .= '</select></div>';
+		$html .= viewcounter_popular_posts();
+		$html .= $args['after_widget'];
+		echo $html;
 		}
 
 }

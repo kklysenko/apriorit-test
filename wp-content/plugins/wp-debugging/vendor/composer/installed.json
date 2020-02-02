@@ -1,0 +1,138 @@
+[
+    {
+        "name": "afragen/wp-dependency-installer",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/afragen/wp-dependency-installer.git",
+            "reference": "05ba1f94bf8268d1a66ebe6a3d510a78281d6d5d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/afragen/wp-dependency-installer/zipball/05ba1f94bf8268d1a66ebe6a3d510a78281d6d5d",
+            "reference": "05ba1f94bf8268d1a66ebe6a3d510a78281d6d5d",
+            "shasum": ""
+        },
+        "require": {
+            "collizo4sky/persist-admin-notices-dismissal": "^1",
+            "php": ">=5.6"
+        },
+        "time": "2019-09-16T15:45:10+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "wp-dependency-installer.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andy Fragen",
+                "email": "andy@thefragens.com",
+                "homepage": "https://thefragens.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Matt Gibbs",
+                "role": "Developer"
+            }
+        ],
+        "description": "Library that helps WordPress plugin dependency management."
+    },
+    {
+        "name": "collizo4sky/persist-admin-notices-dismissal",
+        "version": "1.4.3",
+        "version_normalized": "1.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/collizo4sky/persist-admin-notices-dismissal.git",
+            "reference": "2d7d8bb3cba631ad227c92296a4b675d7cbc71d7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/collizo4sky/persist-admin-notices-dismissal/zipball/2d7d8bb3cba631ad227c92296a4b675d7cbc71d7",
+            "reference": "2d7d8bb3cba631ad227c92296a4b675d7cbc71d7",
+            "shasum": ""
+        },
+        "time": "2019-03-12T05:19:51+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "persist-admin-notices-dismissal.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Collins Agbonghama",
+                "email": "me@w3guy.com"
+            }
+        ],
+        "description": "Simple library to persist dismissal of admin notices across pages in WordPress dashboard."
+    },
+    {
+        "name": "norcross/debug-quick-look",
+        "version": "0.1.5",
+        "version_normalized": "0.1.5.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/afragen/debug-quick-look/archive/vendor.zip"
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "debug-quick-look.php"
+            ]
+        }
+    },
+    {
+        "name": "wp-cli/wp-config-transformer",
+        "version": "v1.2.6",
+        "version_normalized": "1.2.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wp-cli/wp-config-transformer.git",
+            "reference": "1ca98343443a8e4585865db5f50e8e6121fee70b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wp-cli/wp-config-transformer/zipball/1ca98343443a8e4585865db5f50e8e6121fee70b",
+            "reference": "1ca98343443a8e4585865db5f50e8e6121fee70b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.29"
+        },
+        "require-dev": {
+            "composer/composer": "^1.5.6",
+            "phpunit/phpunit": "^6.5.5",
+            "wp-coding-standards/wpcs": "^0.14.0 || ^1.0.0 || ^2.0.0"
+        },
+        "time": "2019-07-23T17:24:43+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/WPConfigTransformer.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Frankie Jarrett",
+                "email": "fjarrett@gmail.com"
+            }
+        ],
+        "description": "Programmatically edit a wp-config.php file."
+    }
+]
