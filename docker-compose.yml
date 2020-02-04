@@ -27,3 +27,7 @@ services:
        WORDPRESS_DB_NAME: wordpress
 volumes:
     db_data: {}
+
+
+#export docker exec 7cda0077392e sh -c 'exec mysqldump -uroot -p"somewordpress" wordpress' > backup.sql
+#import docker exec -i 271f4abb1e55 sh -c 'exec mysql -uroot -p"somewordpress" wordpress' < backup.sql
